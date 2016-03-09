@@ -1,0 +1,7 @@
+.todo-list li:hover{
+	color: #555555;
+}
+
+.todo-list li.done label {
+	text-decoration: line-through;
+}
