@@ -1,4 +1,3 @@
-
 var todoInput = document.getElementsByClassName("todo-input")[0];
 var todoList = document.getElementsByClassName("todo-list")[0];
 var buttonAddTodo = document.getElementsByClassName("add-todo")[0];
@@ -13,7 +12,7 @@ function createTodoItem(content){
     check_box.type = "checkbox";
     check_box.className = "toggle";
 
-    todo_content.innerHTML = content;
+    todo_content.innerHTML = content + "  ";
 
     btnRemove.className = "remove";
     btnRemove.innerHTML = "remove";
