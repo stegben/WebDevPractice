@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Elsa",
+    "lastUpdate": "21:07",
+    "imageSource": "http://lorempixel.com/50/50/people/1",
+    "message": [
+      {"from-other": true, "content": "對啊"},
+      {"from-other": true, "content": "試著"},
+      {"from-other": true, "content": "靠左邊嘛"},
+      {"from-other": false, "content": "換我了"},
+      {"from-other": false, "content": "有看到嗎"}
+    ]
+  },
+  {
+    "name": "Marshall",
+    "lastUpdate": "12:27",
+    "imageSource": "http://lorempixel.com/50/50/people/2",
+    "message": [
+      {"from-other": true, "content": ": )"}
+    ]
+  }
+]

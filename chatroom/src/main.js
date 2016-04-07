@@ -1,25 +1,9 @@
-var initChatRecord = [
-  {
-    "name": "Elsa",
-    "lastUpdate": "21:07",
-    "imageSource": "http://lorempixel.com/50/50/people/1",
-    "message": [
-      {"from-other": true, "content": "對啊"},
-      {"from-other": true, "content": "試著"},
-      {"from-other": true, "content": "靠左邊嘛"},
-      {"from-other": false, "content": "換我了"},
-      {"from-other": false, "content": "有看到嗎"},
-    ],
-  },
-  {
-    "name": "Marshall",
-    "lastUpdate": "12:27",
-    "imageSource": "http://lorempixel.com/50/50/people/2",
-    "message": [
-      {"from-other": true, "content": ": )"},
-    ],
-  },
-]
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+var ThreadItem = require('./ThreadItem')
+var MessageItem = require('./MessageItem')
+var initChatRecord = require('./record.json')
 
 
 // ChatApp: 原本的 HTML
@@ -128,54 +112,6 @@ class ChatApp extends React.Component {
   }
 }
 
-class ThreadItem extends React.Component {
-  render() {
-    return (
-      <li
-        className={this.props.isShow ? "thread-item-select" : "thread-item"}
-        key={this.props.key}
-        onClick={this.props.onClick}
-      >
-        <div className="clearfix">
-          <div className="thread-item_left">
-            <img className="img-circle" src={this.props.imgSrc} width="50" height="50" alt="" className="img"/>
-          </div>
-          <div className="thread-item_right">
-            <div className="thread-from">
-              {this.props.name}
-            </div>
-            <div>
-              <span className="thread-content">
-                {this.props.lastMessage}
-              </span>
-            </div>
-            <span className="thread-time">
-              {this.props.time}
-            </span>
-          </div>
-        </div>
-      </li>
-    );
-  }
-}
-
-class MessageItem extends React.Component {
-  render() {
-    const from_other = this.props.from_other;
-    const content = this.props.content;
-    let class_name = "message-item";
-    if (from_other) {
-      class_name = class_name + " " + "message-from-other";
-    } else {
-      class_name = class_name + " " + "message-from-me";
-    }
-    return (
-      <div className={class_name}>
-        <span>{content}</span>
-      </div>
-    );
-  }
-}
 
 ReactDOM.render(
   <ChatApp source={initChatRecord}/>,
