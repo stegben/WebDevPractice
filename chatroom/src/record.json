@@ -18,5 +18,14 @@
     "message": [
       {"from-other": true, "content": ": )"}
     ]
+  },
+  {
+    "name": "Benn",
+    "lastUpdate": "12:27",
+    "imageSource": "http://lorempixel.com/50/50/people/2",
+    "message": [
+      {"from-other": true, "content": ": )"},
+      {"from-other": false, "content": "fuck"}
+    ]
   }
 ]

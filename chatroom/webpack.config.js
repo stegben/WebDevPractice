@@ -14,7 +14,7 @@ module.exports = {
       loaders: ['style', 'css'],
       exclude: /node_modules/   // 不要處理 3rd party 的 code
     }, {
-      test: /\.json$/,  // 針對 css 檔
+      test: /\.json$/,  // 針對 json 檔
       loaders: ['json'],
       exclude: /node_modules/   // 不要處理 3rd party 的 code
     }]
