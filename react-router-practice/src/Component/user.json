@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Elsa",
+    "imageSource": "http://lorempixel.com/50/50/people/1",
+  },
+  {
+    "name": "Marshall",
+    "imageSource": "http://lorempixel.com/50/50/people/2",
+  },
+  {
+    "name": "Benn",
+    "imageSource": "http://lorempixel.com/50/50/people/2",
+  }
+]

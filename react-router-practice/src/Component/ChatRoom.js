@@ -4,6 +4,8 @@ import ThreadItem from './ThreadItem' ;
 import MessageItem from './MessageItem' ;
 import initChatRecord from './record.json' ;
 
+import '../../style.css'
+
 
 // ChatApp: 原本的 HTML
 class ChatRoom extends React.Component {
